@@ -2,8 +2,11 @@
 node_modules
 /dist
 
+# python cache
+*__pycache__
 
 # local env files
+.venv
 .env.local
 .env.*.local
 
@@ -14,7 +17,6 @@ yarn-error.log*
 pnpm-debug.log*
 
 # Editor directories and files
-.venv
 .idea
 .vscode
 *.suo
