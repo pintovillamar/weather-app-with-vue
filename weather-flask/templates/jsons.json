@@ -1,0 +1,58 @@
+[
+    {
+        "city_name": "Amazonas",
+        "city_longitude": -78.2309,
+        "city_latitude": -5.0000
+    },
+    {
+        "daily_date": "2023-04-07",
+        "daily_temp_c": 17,
+        "daily_temp_f": 62.6,
+        "daily_humidity": 71.76,
+        "daily_pressure": 0.62,
+        "city_id": 1
+    },
+    {
+        "coord": {
+            "lon": -71.535,
+            "lat": -16.3989
+        },
+        "weather": [
+            {
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }
+        ],
+        "base": "stations",
+        "main": {
+            "temp": 282.19,
+            "feels_like": 281.17,
+            "temp_min": 282.19,
+            "temp_max": 282.19,
+            "pressure": 1025,
+            "humidity": 66
+        },
+        "visibility": 10000,
+        "wind": {
+            "speed": 2.06,
+            "deg": 20
+        },
+        "clouds": {
+            "all": 0
+        },
+        "dt": 1681990780,
+        "sys": {
+            "type": 1,
+            "id": 8696,
+            "country": "PE",
+            "sunrise": 1681988103,
+            "sunset": 1682030083
+        },
+        "timezone": -18000,
+        "id": 3947322,
+        "name": "Arequipa",
+        "cod": 200
+    }
+]

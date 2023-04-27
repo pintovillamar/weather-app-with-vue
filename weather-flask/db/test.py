@@ -11,6 +11,7 @@ from db.database import db, ma
 from datetime import datetime
 
 from db.city import City
+from db.daily import Daily
 
 class test(db.Model):
     test_id = db.Column(db.Integer, primary_key=True)
@@ -45,12 +46,16 @@ model = testModel()
 
 test_blueprint = Blueprint('test', __name__)
 
-@test_blueprint.route('/test/<id>', methods=['POST'])
+@test_blueprint.route('/test/<name>', methods=['POST'])
 @cross_origin()
-def test(id):
-    city_id = id
-    name = City.query.get(city_id).city_name
-    longitude = City.query.get(city_id).city_longitude
-    latitude = City.query.get(city_id).city_latitude
+def test(name):
+    # city_id = id
+    # name = City.query.get(city_id).city_name
+    # longitude = City.query.get(city_id).city_longitude
+    # latitude = City.query.get(city_id).city_latitude
     
-    return jsonify({'city name: ': name, 'city longitude: ': longitude , 'city latitude: ': latitude})
+    # return jsonify({'city name: ': name, 'city longitude: ': longitude , 'city latitude: ': latitude})
+
+    # only with the name obtain the id of the city
+    city_id = City.query.filter_by(city_name=name).first().city_id
+    return jsonify({'city id: ': city_id})

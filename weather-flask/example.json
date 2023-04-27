@@ -1,0 +1,39 @@
+{
+    "dt": 1682478000,
+    "main": {
+        "temp": 283.37,
+        "feels_like": 282.75,
+        "temp_min": 283.37,
+        "temp_max": 283.83,
+        "pressure": 1003,
+        "sea_level": 1003,
+        "grnd_level": 985,
+        "humidity": 88,
+        "temp_kf": -0.46
+    },
+    "weather": [
+        {
+            "id": 500,
+            "main": "Rain",
+            "description": "light rain",
+            "icon": "10d"
+        }
+    ],
+    "clouds": {
+        "all": 100
+    },
+    "wind": {
+        "speed": 3.53,
+        "deg": 342,
+        "gust": 6.28
+    },
+    "visibility": 10000,
+    "pop": 1,
+    "rain": {
+        "3h": 1.58
+    },
+    "sys": {
+        "pod": "d"
+    },
+    "dt_txt": "2023-04-26 03:00:00"
+}
