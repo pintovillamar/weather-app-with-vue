@@ -14,6 +14,7 @@ class Daily(db.Model):
     daily_temp_c = db.Column(db.Float, nullable=False) 
     daily_temp_f = db.Column(db.Float, nullable=False)
     daily_humidity = db.Column(db.Float, nullable=False)
+    daily_feels_like = db.Column(db.Float, nullable=False)
     daily_pressure = db.Column(db.Float, nullable=False)
     daily_created_at = db.Column(db.DateTime, default=db.func.current_timestamp())
     daily_updated_at = db.Column(db.DateTime, default=db.func.current_timestamp(), onupdate=db.func.current_timestamp())
